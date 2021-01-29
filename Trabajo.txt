@@ -1,0 +1,126 @@
+Server=localhost;Database=master;Trusted_Connection=True;
+
+Projektarbete - Väderdata
+◦ Projektet är en applikation som, utifrån befintlig temperatur- och luftfuktighetsdata kan söka, sortera och dra slutsatser.
+◦ I det här projektet lämnar vi in lösningar enskilt.
+◦ Att arbeta tillsammans är alltid tillåtet
+◦ Datafil i textformat, kommaseparerat.
+◦ Datafilen är autentisk, och har datafel, och luckor.
+◦ Exempel på data:
+
+https://docs.google.com/spreadsheets/d/1CmOA9nZnohgPZ5e9HpKQRNF5koWARg59JYAPS6P2r-M/edit#gid=0
+
+Trabajo de proyecto - Datos meteorológicos
+◦ El proyecto es una aplicación que, basándose en datos de temperatura y humedad existentes, puede buscar, clasificar y sacar conclusiones.
+◦ En este proyecto, presentamos soluciones individualmente.
+◦ Trabajar juntos siempre está permitido
+◦ Archivo de datos en formato de texto, separados por comas.
+◦ El archivo de datos es auténtico y tiene errores y lagunas en los datos.
+◦ Ejemplos de datos:
+
+https://docs.google.com/spreadsheets/d/1CmOA9nZnohgPZ5e9HpKQRNF5koWARg59JYAPS6P2r-M/edit#gid=0
+
+---------------------------------------------------------------------
+
+Mostrar
+
+Utomhus:
+◦ Medeltemperatur för valt datum (sökmöjlighet) CHECK!
+◦ Sortering av varmast till kallaste dagen enligt medeltemperatur per dag
+◦ Sortering av torrast till fuktigaste dagen enligt medelluftfuktighet per dag
+◦ Sortering av minst till störst risk för mögel
+	En luftfuktighet på över 80 % uppnås bland annat i förbindelse med en så kallad köldbrygga, som är den kondens som temperaturskillnaden mellan utomhus- och inomhusmiljön skapar. Temperaturskillnaden kommer på så vis att framkalla en "våt sida" inomhus.
+
+◦ Datum för meteorologisk Höst
+	Enligt SMHI:s meteorologiska definition råder höst då en dygnsmedeltemperatur på mellan 0 och + 10 grader Celsius varat i fem dygn, så länge detta inträffar efter 1 augusti. Vi Säger att vintern anlände det första av dessa dygn.
+
+◦ Datum för meteorologisk Vinter (OBS! Vintern 2016 var mild)
+	Enligt SMHI:s meteorologiska definition, om dygnsmedeltemperaturen är 0,0°C eller lägre fem dygn i följd, säger vi att vintern anlände det första av dessa dygn.
+
+Exterior:
+◦ Temperatura promedio para la fecha seleccionada (opción de búsqueda)
+◦ Clasificación del día mas caluroso al mas frío según temperatura media por día.
+◦ Clasificación del día mas seco al mas húmedo según la humedad media por día.
+◦ Clasificación de menor a mayor riesgo de moho.
+◦ Fecha de otoño meteorológico.
+	Según la definición meteorológica del SMHI, el otoño prevalece cuando una temperatura media diaria de entre 0 y + 10 grados centígrados dura cinco días, siempre que esto ocurra después del 1 de agosto.
+◦ Fecha para el invierno meteorológico (¡NOTA! El invierno de 2016 fue suave)
+
+---------------------------------------------------------------------
+
+Inomhus
+◦ Medeltemperatur för valt datum (sökmöjlighet)
+◦ Sortering av varmast till kallaste dagen enligt medeltemperatur per dag
+◦ Sortering av torrast till fuktigaste dagen enligt medelluftfuktighet per dag
+◦ Sortering av minst till störst risk för mögel
+
+Interior
+◦ Temperatura promedio para la fecha seleccionada (opción de búsqueda)
+◦ Clasificación del día más cálido al más frío según la temperatura promedio por día
+◦ Clasificación del día más seco al más húmedo según la humedad media por día
+◦ Clasificación de menor a mayor riesgo de moho
+
+---------------------------------------------------------------------
+
+Frågeställningar som ska lösas
+◦ Val av datatyper i DB för den här typen av data.
+◦ Inläsning av textfil till databasen
+◦ Algoritmer som räknar fram aggregerad data
+◦ Meteorologiska regler för Höst, Vinter och Mögelindex
+◦ Mögelrisk, hitta formel.
+
+Problemas por resolver
+◦ Selección de tipos de datos en DB para este tipo de datos.
+◦ Cargado de archivo de texto en la base de datos.
+◦ Algoritmos que calculan sobre las unidades de datos.
+◦ Reglas meteorológicas para otoño, invierno e índice de moho.
+◦ Riesgo de moho, encontrar fórmula.
+
+---------------------------------------------------------------------
+
+Andra krav
+◦ Applikationen använder .NET 5 (den senaste versionen)
+◦ Ni väljer själva vilken teknik ni vill använda för användargränssnittet:
+◦ Console
+◦ Windows Forms
+◦ Web API
+◦ Razor Pages
+◦ Blazor
+◦ Xamarin för den riktigt äventyrslystne…
+◦ Källkoden dokumenterad i löpande kod, med särskild stor vikt vid användandet av
+algoritmer. Förklara dina val av algoritmer och datastrukturer.
+◦ Dataåtkomst skall göras med Entity Framework (Core)
+◦ Jämför gärna de resultat du får i din app med andra elever, för att dela med er av hur ni
+tänkt.
+◦ Samtliga krav och specifikationer kan ändras under arbetets gång.
+
+Otros requerimientos
+◦ La aplicación usa .NET 5 (última versión)
+◦ Usted elige qué tecnología desea utilizar para la interfaz de usuario:
+	◦ Consola
+	◦ Windows Forms
+	◦ API web
+	◦ Páginas de Razor
+	◦ Blazor
+	◦ Xamarin para los realmente aventureros…
+◦ El código fuente está documentado en el código actual, con especial énfasis en el uso de algoritmos. Explique sus elecciones de algoritmos y estructuras de datos.
+◦ El acceso a los datos debe realizarse con Entity Framework (Core)
+◦ Siéntase libre de comparar los resultados que obtiene en su aplicación con otros estudiantes, para compartir con usted cómo pensamiento.
+◦ Todos los requisitos y especificaciones se pueden cambiar durante el trabajo.
+
+---------------------------------------------------------------------
+
+VG-uppgift
+För att få VG ska programmet även kunna göra bedömningar kring följande frågor:
+◦ Hur länge är balkongdörren öppen per dag, och sorterat på då den är längst tid öppen.
+◦ Antagandet är att om balkongdörren öppnas så sjunker innertemperaturen lite.
+◦ Yttertemperaturen höjs också lite grann, då termometern sitter nära balkongdörren.
+◦ Sortering på då inne- och yttertemperaturen skiljt sig mest och minst.
+
+Información VG
+Para obtener VG, el programa también debe poder realizar evaluaciones sobre los siguientes temas:
+◦ ¿Cuánto tiempo está abierta la puerta del balcón por día y se clasifica según cuándo está abierta durante más tiempo?
+◦ El supuesto es que si se abre la puerta del balcón, la temperatura interna desciende levemente.
+◦ La temperatura exterior también se eleva ligeramente, ya que el termómetro está cerca de la puerta del balcón.
+◦ Clasificación cuando las temperaturas interior y exterior difieren más y difieren menos.
+

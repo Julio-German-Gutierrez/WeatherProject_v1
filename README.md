@@ -16,9 +16,9 @@ Entity Framework Code first approach.
 EF presented some challenges, but at the same time, it simplified others.
 
 ## About the Formula
-I studied many papers and articles about the Mold subject. I consulted even two friends of mine, one
-Biologist and one Agronom engineer. Although not in their specific field of expertise, gave me links
-to articles and information from where I did base my study.
+I studied many papers and articles about Mold as a subject. I consulted even two friends of mine, one
+Biologist and one Agronom engineer. Although not in their specific field of expertise, they managed
+to give me links to different articles with precise information from where I did base my study.
 In the "About" folder, there is a document explaining in more detail the process I went threw while
 creating the formula.
 
